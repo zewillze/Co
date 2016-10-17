@@ -1,0 +1,30 @@
+<div id="main-contain" class="mid-contain">
+    <div id="post-contain">
+        <form role="form" action="/edit" method="post">
+
+         <div><input id="post-title" name="post_title" type="text" v-model="v_title" value="{{.Post.Title}}"/></div>
+         <div id="post-content-box"><textarea id="post-content" name="post_content">{{.Post.Content}}</textarea></div>
+         <div><input id="tag" type="text" name="tags" value="{{range .Post.Tags}} {{.Name}} {{end}}"/></div>
+            <input name="post_id" value="{{.Post.Id}}"  style="display: none"/>
+            <input type="submit" :disabled="d"/>
+        </form>
+    </div>
+    {{.flash.error}}
+<div/>
+
+
+
+
+<script>
+    new Vue({
+        el: "#main-contain",
+        data:{
+             v_title : "",
+        },
+        computed: {
+            d: function(){
+                return !this.v_title.length > 0;
+            }
+        }
+    });
+</script>

@@ -1,0 +1,57 @@
+<style type="text/css">
+			#app {
+				width: 400px;
+				margin: 0 auto;
+				position: relative;
+				top: 100px;
+			}
+			#app span {
+				font-size: 12px;
+				color: #ccc;
+			}
+			#app button {
+				width: 150px;
+				height: 30px;
+				background-color: #ccc;
+
+			}
+		</style>
+
+<div id="main-contain" class="mid-contain">
+<div id="app">
+    <form action="/login" method="post">
+            <input type="text" name="username" v-model="userName" value="username"> <span v-show="!validUserNameLength">请输入6位以上用户名</span> <br/><br/>
+
+            <input type="password" name="password" v-model="passWord" value=""><span v-show="!validPassWordLength">请输入8位以上密码</span> <br/><br/>
+
+            <button :disabled="disabled">Submit</button>
+    </form>
+</div>
+</div>
+
+        <script>
+
+		var vm = new Vue({
+			el: "#app",
+
+			data: {
+				userName: "",
+				passWord: "",
+				validUserNameLength: false,
+				validPassWordLength: false,
+				disabled: false,
+			},
+
+			computed: {
+				validUserNameLength: function(){
+					return this.userName.length > 6;
+				},
+				validPassWordLength: function(){
+					return this.passWord.length > 8;
+				},
+				disabled: function() {
+					return !this.validPassWordLength || !this.validUserNameLength;
+				}
+			}
+		});
+	</script>

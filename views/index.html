@@ -1,0 +1,55 @@
+<div id="main-contain" class="mid-contain">
+    <!-- Article Content-->
+    <div id="article-contain">
+        {{range .Posts}}
+
+        <div class="content-contain">
+            <div class="content-title"><a href="/edit_post/{{.Id}}"><h3 class="font_5">{{.Title}}</h3></a></div>
+            <div class="content-date"><p class="font_9 color_13">{{dateformat .Created.Local "2006-01-02 15:04:05"}}<span>   </span>{{range .Tags}} {{.Name}} {{end}}</p></div>
+            <div class="contents"><p class="font_8 color_15">{{.Content}}</p></div>
+            <div class="content-readmore"><a href="">Read More</a></div>
+        </div>
+
+        {{end}}
+
+    </div>
+
+
+    <div id="profile-content">
+        <div id="profile-title" class="font_5">
+            Hello world
+        </div>
+
+        <div id="profile-icon">
+            <img src="http://img5.imgtn.bdimg.com/it/u=3157684717,896234272&fm=21&gp=0.jpg"/>
+        </div>
+
+        <div id="profile-desc" class="font_6">
+            Looking for a job!
+        </div>
+
+        <div id="profile-desc-sub" class="font_8">
+            Looking for a job!
+            Looking for a job!
+            Looking for a job!
+            Looking for a job!
+            Looking for a job!
+        </div>
+        <div id="profile-readmore"><a href="" class="color_17">Read More</a></div>
+
+        <div id="subscribe-box">
+            <div class="sub-title"><h5 class="font_5">Never Miss a Post</h5><h5 class="font_5">Subscribe Now!</h5></div>
+            <div class="sub-content font_8" style="line-height:1.6em">I'm a bla bla bla bla bla bla bla bla bla blabla
+                bla bla bla blabla bla bla bla bla
+            </div>
+            <div class="email-box"><input type="text" name="email" value="" /></div>
+            <div class="sub-button">
+                <button class="button">Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+

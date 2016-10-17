@@ -1,0 +1,282 @@
+/**** basic elements ***/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/**** basic layout ****/
+.huge-width{
+    width: 100%;
+    overflow: hidden;
+}
+
+.mid-contain{
+    width: 987px;
+    margin: 0 auto;
+}
+
+/****header ****/
+#header-top{
+
+    height: 135px;
+    background-color: rgba(173, 193, 240, 0.35);
+    border-top: 0px solid rgba(160, 160, 159, 1);
+    border-bottom: 0px solid rgba(160, 160, 159, 1);
+}
+
+
+#header-top .header-content{
+    height: inherit;
+}
+
+#header-top .header-content .header-title{
+
+    position: relative;
+
+}
+#header-nav-contain{
+    height: 47px;
+    background-color: #556ed4;
+}
+
+.nav-ul-left {
+    display: inline-block;
+
+}
+.nav-ul-left ul{
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.nav-ul-left ul li a{
+    display: inline-block;
+    color: white;
+    text-align: left;
+    padding: 15px 24px 14px 0;
+    text-decoration: none;
+
+}
+
+
+.nav-ul-left ul li a:hover {
+    color: #3e95d4;
+    transition: color 0.4s ease 0s;
+}
+.nav-ul-left ul li{
+    float: left;
+}
+
+.nav-ul-right{
+    display: inline-block;
+    float: right;
+}
+
+.nav-ul-right ul{
+    overflow: hidden;
+    color: #fff;
+    list-style-type: none;
+}
+.nav-ul-right ul li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-ul-right ul li {
+    float: left;
+}
+
+
+/****main content****/
+#main-contain{
+
+    background-color: #fff;
+}
+
+#article-contain{
+    width: 60%;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    float: left;
+}
+
+#profile-content{
+    width: 30%;
+    float: right;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+
+.header-title{
+    position: absolute;
+    left: 0px;
+    top: 40px;
+}
+
+
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+#profile-icon{
+  margin-top: 20px;
+}
+
+#profile-desc{
+  margin-top: 20px;
+}
+
+#profile-desc-sub{
+  margin-top: 10px;
+  padding: 4px;
+  text-align: center;
+}
+
+
+
+#profile-readmore a{
+  text-decoration: underline;
+  font-size: 16px;
+}
+#subscribe-box {
+    margin-top: 50px;
+    background-color: rgba(243, 243, 243, 1.0);
+    margin-bottom: 50px;
+}
+
+#subscribe-box .email-box input{
+
+  background-color: #fff;
+  height: 25px;
+  width: 80%;
+  margin-top: 30px;
+
+}
+
+#subscribe-box .sub-content{
+  margin: 0px;
+  width: 80%;
+  padding: 0px 30px;
+}
+#subscribe-box .sub-button button{
+  width: 82%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#subscribe-box .sub-title {
+   padding: 30px;
+
+}
+#subscribe-box .sub-title h5{
+  line-height: 1.4em;
+  letter-spacing: normal;
+}
+
+.button{
+
+  padding: 10px 10px;
+  background-color: rgba(99, 137, 225, 1.0);
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
+}
+
+.content-contain{
+  margin-bottom: 40px;
+}
+.content-contain .content-title a:hover{
+
+  text-decoration: underline;
+  color: #1d1d1f;
+}
+
+
+
+.content-contain .content-title h3{
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+
+.content-contain .content-date p{
+  line-height: normal;
+  letter-spacing: normal;
+  margin-top: 4px;
+
+}
+
+.content-contain .contents{
+  word-wrap: break-word;
+  margin-top: 14px;
+}
+.content-contain .contents{
+  word-wrap: break-word;
+  line-height: 1.6em;
+}
+
+.content-contain .content-readmore{
+  margin-top: 20px;
+}
+
+.content-contain .content-readmore a{
+  color: #6389e1;
+  font-size: 19px;
+}
+
+/****footer****/
+.footer{
+    height: 50px;
+    background-color: #fff;
+    border-top: 1px solid #A0A09F;
+}
+.footer .footer-text {
+    line-height: 50px;
+}
+.pos{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#post-contain{
+    margin-top: 30px;
+
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#post-title {
+    width: 500px;
+    height: 35px;
+    font-size: 25px;
+    border: none;
+}
+
+#post-content-box {
+    padding: 20px 0;
+}
+#post-content {
+    width: 500px;
+    min-height: 500px;
+    font-size: 18px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
